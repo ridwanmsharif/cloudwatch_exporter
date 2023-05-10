@@ -1,212 +1,390 @@
 region: us-east-1
 metrics:
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: CPUUtilization
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: CPUCreditBalance
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: FreeableMemory
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: NetworkBytesIn
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: NetworkBytesOut
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: SwapUsage
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: CacheHits
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: CacheMisses
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: CurrConnections
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: NewConnections
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: GetTypeCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: SetTypeCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: EngineCPUUtilization
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: BytesUsedForCache
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: HashBasedCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: HyperLogLogBasedCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: KeyBasedCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: ListBasedCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: SetBasedCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: SetTypeCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: SortedSetBasedCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: StringBasedCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: StreamBasedCmds
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: CurrItems
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
   aws_metric_name: ActiveDefragHits
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
+  aws_dimensions:
   - CacheNodeId
   - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: AuthenticationFailures
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: BytesReadIntoMemcached
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: BytesUsedForCache
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: BytesUsedForCacheItems
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: BytesUsedForHash
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: BytesWrittenOutFromMemcached
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CPUCreditBalance
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CPUCreditUsage
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CPUUtilization
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CacheHits
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CacheMisses
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CasBadval
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CasHits
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CasMisses
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CmdConfigGet
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CmdConfigSet
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CmdFlush
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CmdGet
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CmdSet
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CmdTouch
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CommandAuthorizationFailures
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CrawlerItemsChecked
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CurrConfig
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CurrConnections
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CurrItems
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: CurrVolatileItems
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: DatabaseMemoryUsageCountedForEvictPercentage
+  aws_dimensions:
+  - NodeGroupId
+  - ReplciationGroupId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: DatabaseMemoryUsagePercentage
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: DecrHits
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: DecrMisses
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: DeleteHits
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: DeleteMisses
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: EngineCPUUtilization
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+  - NodeGroupId
+  - ReplicationGroupId
+  - Role
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: EvictedUnfetched
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
   aws_metric_name: Evictions
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
+  aws_dimensions:
   - CacheNodeId
   - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: ExpiredUnfetched
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: FreeableMemory
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: GetHits
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: GetMisses
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: IamAuthenticationExpirations
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: IamAuthenticationThrottling
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: IncrHits
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: IncrMisses
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: IsMaster
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: KeyAuthorizationFailures
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: KeyBasedCmds
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: ListBasedCmds
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: KeysTracked
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: MasterLinkHealthStatus
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: MemoryFragmentationRatio
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NetworkBandwidthInAllowanceExceeded
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NetworkBandwidthOutAllowanceExceeded
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NetworkBytesIn
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NetworkBytesOut
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NetworkConntrackAllowanceExceeded
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NetworkPacketsIn
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NetworkPacketsOut
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NetworkPacketsPerSecondAllowanceExceeded
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NewConnections
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NewItems
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NonKeyTypeCmds
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: NonKeyTypeCmdsLatency
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
   aws_metric_name: Reclaimed
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
+  aws_dimensions:
   - CacheNodeId
   - CacheClusterId
-  aws_metric_name: SaveInProgress
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
-  aws_metric_name: ReplicationLag
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
-- aws_dimensions:
-  - CacheNodeId
-  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
   aws_metric_name: ReplicationBytes
-  aws_namespace: AWS/ElastiCache
-  aws_statistics:
-  - Average
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: ReplicationLag
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: SetBasedCmds
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: SetTypeCmds
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: SlabsMoved
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: SortedSetBasedCmds
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: StringBasedCmds
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: SaveInProgress
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: SwapUsage
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: TouchHits
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: TouchMisses
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: TrafficManagementActive
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
+- aws_namespace: AWS/ElastiCache
+  aws_metric_name: UnusedMemory
+  aws_dimensions:
+  - CacheNodeId
+  - CacheClusterId
